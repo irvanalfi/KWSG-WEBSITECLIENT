@@ -17,9 +17,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	animation-name: open;
-	animation-duration: 2s;
-	animation-delay: 3.5s;
-	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
 }
 
 .splash .img {
@@ -30,35 +29,12 @@ body {
 	z-index: 9;
 }
 
-.splash::after,
-.splash::before {
-	content: "";
-	position: absolute;
-	background-color: #fff;
-	height: 100vh;
-	width: 30vw;
-	z-index: 99;
-	animation-name: open;
-	animation-fill-mode: forwards;
-	animation-duration: 2s;
-}
-
-.splash::after {
-	left: 30vw;
-	animation-delay: 200ms;
-}
-
-.splash::before {
-	left: 0;
-	animation-delay: 2s;
-}
-
 @keyframes open {
 	0% {
-		transform: translate(0, 0);
+		top: 0px;
 	}
 
 	100% {
-		transform: translate(100%, 0);
+		top: 10px;
 	}
 }
