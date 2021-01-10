@@ -2059,7 +2059,7 @@ ul {
 .banner_part {
 	position: relative;
 	overflow: hidden;
-	background-image: url(../img/banner_bg.png);
+	background-image: url("../image/banner_bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center
@@ -2068,7 +2068,7 @@ ul {
 .banner_part .banner_text {
 	display: table;
 	width: 100%;
-	height: 1020px
+	height: 550px
 }
 
 .banner_part .banner_text .banner_text_iner {
@@ -2078,13 +2078,13 @@ ul {
 
 @media(max-width:991px) {
 	.banner_part .banner_text {
-		height: 650px
+		height: 450px
 	}
 }
 
 @media only screen and (min-width:992px) and (max-width:1200px) {
 	.banner_part .banner_text {
-		height: 650px
+		height: 450px
 	}
 }
 
@@ -2100,7 +2100,7 @@ ul {
 	font-size: 55px;
 	text-transform: capitalize;
 	font-weight: 700;
-	margin-bottom: 55px;
+	margin-bottom: 25px;
 	line-height: 1.18;
 	color: #fff
 }
@@ -2150,8 +2150,22 @@ ul {
 	padding-right: 140px
 }
 
+.banner_part .banner_text b {
+	font-size: 20px;
+	line-height: 1;
+	font-family: poppins, sans-serif;
+	color: #fff;
+	margin-bottom: 57px;
+	padding-right: 140px
+}
+
 @media(max-width:991px) {
 	.banner_part .banner_text p {
+		padding-right: 0;
+		margin-bottom: 10px
+	}
+
+	.banner_part .banner_text b {
 		padding-right: 0;
 		margin-bottom: 10px
 	}
@@ -2159,6 +2173,10 @@ ul {
 
 @media only screen and (min-width:992px) and (max-width:1200px) {
 	.banner_part .banner_text p {
+		padding-right: 0
+	}
+
+	.banner_part .banner_text b {
 		padding-right: 0
 	}
 }
@@ -3133,7 +3151,7 @@ ul {
 
 @media(max-width:991px) {
 	.footer_part .copyright_text {
-		text-align: center !important
+		text-align: left !important
 	}
 }
 
@@ -3153,7 +3171,7 @@ ul {
 
 @media(max-width:991px) {
 	.footer_part .footer_icon {
-		text-align: center;
+		text-align: right;
 		float: none
 	}
 }
