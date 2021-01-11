@@ -439,12 +439,14 @@ ul {
 
 .btn_2 {
 	display: inline-block;
-	padding: 18.5px 40px;
+	width: 110px;
+	margin-left: 35px;
+	padding: 10px 10px;
 	border-radius: 5px;
 	background-color: #fff;
-	font-size: 15px;
+	font-size: 13px;
 	font-family: poppins, sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	color: #1a1a1a;
 	-o-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
@@ -462,22 +464,22 @@ ul {
 
 @media(max-width:576px) {
 	.btn_2 {
-		padding: 10px 30px;
-		margin-top: 20px
+		padding: 5px 5px;
+		margin-top: 5px
 	}
 }
 
 @media only screen and (min-width:576px) and (max-width:767px) {
 	.btn_2 {
-		padding: 10px 30px;
-		margin-top: 20px
+		padding: 5px 5px;
+		margin-top: 10px
 	}
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.btn_2 {
-		padding: 10px 30px;
-		margin-top: 25px
+		padding: 10px 10px;
+		margin-top: 10px
 	}
 }
 
@@ -2078,13 +2080,13 @@ ul {
 
 @media(max-width:991px) {
 	.banner_part .banner_text {
-		height: 450px
+		height: 480px
 	}
 }
 
 @media only screen and (min-width:992px) and (max-width:1200px) {
 	.banner_part .banner_text {
-		height: 450px
+		height: 550px
 	}
 }
 
@@ -2108,7 +2110,7 @@ ul {
 @media(max-width:576px) {
 	.banner_part .banner_text h1 {
 		font-size: 25px;
-		margin-bottom: 15px;
+		margin-bottom: 8px;
 		line-height: 1.3
 	}
 }
@@ -2146,12 +2148,12 @@ ul {
 	line-height: 1.8;
 	font-family: poppins, sans-serif;
 	color: #fff;
-	margin-bottom: 57px;
+	margin-bottom: 30px;
 	padding-right: 140px
 }
 
 .banner_part .banner_text b {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1;
 	font-family: poppins, sans-serif;
 	color: #fff;
@@ -2162,12 +2164,8 @@ ul {
 @media(max-width:991px) {
 	.banner_part .banner_text p {
 		padding-right: 0;
-		margin-bottom: 10px
-	}
-
-	.banner_part .banner_text b {
-		padding-right: 0;
-		margin-bottom: 10px
+		margin-bottom: 10px;
+		font-size: 13px;
 	}
 }
 
@@ -2175,7 +2173,16 @@ ul {
 	.banner_part .banner_text p {
 		padding-right: 0
 	}
+}
 
+@media(max-width:991px) {
+	.banner_part .banner_text b {
+		padding-right: 0;
+		margin-bottom: 10px
+	}
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
 	.banner_part .banner_text b {
 		padding-right: 0
 	}
@@ -2967,24 +2974,24 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 130px 0 25px
+	padding: 130px 0 15px
 }
 
 @media(max-width:576px) {
 	.footer_part {
-		padding: 70px 0 25px
+		padding: 0px 0 5px
 	}
 }
 
 @media only screen and (min-width:576px) and (max-width:767px) {
 	.footer_part {
-		padding: 70px 0 25px
+		padding: 70px 0 15px
 	}
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.footer_part {
-		padding: 70px 0 25px
+		padding: 70px 0 15px
 	}
 }
 
@@ -4897,7 +4904,7 @@ h6 {
 }
 
 .footer_part img {
-	margin-bottom: 35px
+	margin-bottom: 0px
 }
 
 @media(max-width:576px) {
@@ -5003,8 +5010,8 @@ h6 {
 
 .footer_part hr {
 	background-color: #cad7dc;
-	margin-top: 50px;
-	margin-bottom: 25px
+	margin-top: 10px;
+	margin-bottom: 5px
 }
 
 .footer_part .footer_icon {
