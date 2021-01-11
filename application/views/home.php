@@ -31,19 +31,19 @@
                             <p><b>KW10008</b> <br> <b>Koperasi Warga Semen Gresik</b> <br>Jl. Tauchid Perum PT. Semen Gresik <br> Tubanan - Gresik, Jawa Timur</p>
                             <div class="mt-2">
                                 <a href="#" class="shadow btn_2 banner_btn_2" style="text-align: center; margin-top: 2px;">
-                                    <i class="fa fa-id-card" style="font-size: 25px;"></i><br><span>Sipintar</span>
+                                    <i class="fa fa-credit-card" style="font-size: 25px;"></i><br><span>Sipintar</span>
                                 </a>
                                 <a href="#" class="shadow btn_2 banner_btn_1" style="text-align: center;">
-                                    <i class="fas fa-info" style="font-size: 25px;"></i><br><span>Info Anggota</span>
+                                    <i class="fa fa-id-card" style="font-size: 25px;"></i><br><span>Info Anggota</span>
                                 </a><br><br>
                                 <a href="#" class="shadow btn_2 banner_btn_2" style="text-align: center; margin-top: 2px;">
-                                    <i class="fas fa-info" style="font-size: 25px;"></i><br><span>Pembiayaan</span>
+                                    <i class="fas fa-hand-holding-usd" style="font-size: 25px;"></i><br><span>Pembiayaan</span>
                                 </a>
                                 <a href="#" class="shadow btn_2 banner_btn_1" style="text-align: center;">
-                                    <i class="fa fa-id-card" style="font-size: 25px;"></i><br><span>Simpanan</span>
+                                    <i class="fas fa-file-invoice-dollar" style="font-size: 25px;"></i><br><span>Simpanan</span>
                                 </a><br><br>
                                 <a href="#" class="shadow btn_2 banner_btn_2" style="text-align: center; margin-top: 2px;">
-                                    <i class="fas fa-info" style="font-size: 25px;"></i><br><span>Promo</span>
+                                    <i class="fas fa-percent" style="font-size: 25px;"></i><br><span>Promo</span>
                                 </a>
                                 <a href="#" class="shadow btn_2 banner_btn_1" style="text-align: center;">
                                     <i class="fas fa-info-circle" style="font-size: 25px;"></i><br><span>About Apss</span>
