@@ -192,142 +192,122 @@
                 </div>
             </div>
         </header>
+        <!-- page content start -->
+        <div class="container-fluid px-0">
+            <div class="card overflow-hidden">
+                <div class="card-body p-0 h-150">
+                    <div class="background">
+                        <img src="<?= base_url() ?>assets/img/image10.jpg" alt="" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid top-70 text-center mb-4">
+            <div class="avatar avatar-140 rounded-circle mx-auto shadow">
+                <div class="background">
+                    <img src="<?= base_url() ?>assets/img/user1.png" alt="">
+                </div>
+            </div>
+        </div>
 
-        <div class="container mt-3 mb-3 text-center">
-            <h2 class="text-white">Rp.154.800,00</h2>
-            <p class="text-white mb-2">List Sipintar SHU</p>
-            <span class="arrow material-icons" style="color: white !important;">expand_more</span>
+        <div class="container mb-4 text-center text-white">
+            <h6 class="mb-1">Wahyu Maulana</h6>
+            <p>Gresik, Indonesia</p>
+            <p class="mb-1">wahyumaulana01@gmail.com</p>
+            <p>+62 8177 8821 1152</p>
         </div>
 
         <div class="main-container">
-            <!-- list -->
+            <div class="container mb-4">
+                <div class="row mb-4">
+                    <div class="col">
+                        <button class="btn btn-outline-default px-2 btn-block rounded"><span class="material-icons mr-1">qr_code_scanner</span> Share QR</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="card">
-                    <div class="card-body px-0">
-                        <div class="list-group list-group-flush">
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
+                    <div class="card-header">
+                        <h6 class="mb-0">App Services</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0">
+                        <div class="list-group list-group-flush border-top border-color">
+                            <a href="language.html" class="list-group-item list-group-item-action border-color">
                                 <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">language</span>
+                                        </div>
                                     </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-31</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">Language</h6>
+                                        <p class="text-secondary">Choose preffered language</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
+                            <a href="security_settings.html" class="list-group-item list-group-item-action border-color">
                                 <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">lock_open</span>
+                                        </div>
                                     </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-28</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 41.000</p>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">Security Settings</h6>
+                                        <p class="text-secondary">Password</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
+                            <a href="notification_settings.html" class="list-group-item list-group-item-action border-color">
                                 <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">notifications</span>
+                                        </div>
                                     </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-27</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 35.000</p>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">Notification Settings</h6>
+                                        <p class="text-secondary">Customize notification receiving</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
+                            <a href="my_cards.html" class="list-group-item list-group-item-action border-color">
                                 <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">credit_card</span>
+                                        </div>
                                     </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-25</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">My Cards</h6>
+                                        <p class="text-secondary">Add, update, delete Credit Cards</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
+                            <a href="my_address.html" class="list-group-item list-group-item-action border-color">
                                 <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">location_city</span>
+                                        </div>
                                     </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-20</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 15.000</p>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">My Address</h6>
+                                        <p class="text-secondary">Add, update, delete address</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
+                            <a href="login.html" class="list-group-item list-group-item-action border-color">
                                 <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-danger-light text-danger rounded">
+                                            <span class="material-icons">power_settings_new</span>
+                                        </div>
                                     </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-15</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-10</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-01</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 72.000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-02-29</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">Logout</h6>
+                                        <p class="text-secondary">Logout from the application</p>
                                     </div>
                                 </div>
                             </a>
@@ -337,6 +317,36 @@
             </div>
         </div>
     </main>
+
+    <!-- footer-->
+    <div class="footer">
+        <div class="row no-gutters justify-content-center">
+            <div class="col-auto pl-2">
+                <a href="index.html" class="active">
+                    <i class="material-icons">home</i>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="col-auto pl-3">
+                <a href="wallet.html" class="">
+                    <i class="material-icons">account_balance_wallet</i>
+                    <p>Wallet</p>
+                </a>
+            </div>
+            <div class="col-auto pl-3">
+                <a href="shop.html" class="">
+                    <i class="material-icons">perm_device_information</i>
+                    <p>About Apss</p>
+                </a>
+            </div>
+            <div class="col-auto pl-3">
+                <a href="profile.html" class="">
+                    <i class="material-icons">account_circle</i>
+                    <p>Profile</p>
+                </a>
+            </div>
+        </div>
+    </div>
 
 
     <!-- color settings style switcher -->

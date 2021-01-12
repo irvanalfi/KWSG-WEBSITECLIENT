@@ -14,9 +14,9 @@
     <link rel="manifest" href="manifest.json" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/favicon180.png" sizes="180x180">
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/lgputih33.png" sizes="180x180">
+    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="16x16" type="image/png">
 
     <!-- Material icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,7 +38,7 @@
             <div class="align-self-center col">
                 <div class="logo-loading">
                     <div class="icon icon-100 mb-4 rounded-circle">
-                        <img src="img/favicon144.png" alt="" class="w-100">
+                        <img src="<?= base_url() ?>assets/img/lgbiru.png" alt="" class="w-100">
                     </div>
                     <h4 class="text-default">KWSG App</h4>
                     <p class="text-secondary">Mensejahterakan Anggota</p>
@@ -172,8 +172,8 @@
                     </button>
                 </div>
                 <div class="text-left col align-self-center">
-                    <a class="navbar-brand" href="#">
-                        <h5 class="mb-0">KWSGApp</h5>
+                    <a class="navbar-brand pl-5" href="#">
+                        <img src="<?= base_url() ?>assets/img/lgicon.png" alt="">
                     </a>
                 </div>
                 <div class="ml-auto col-auto pl-0">

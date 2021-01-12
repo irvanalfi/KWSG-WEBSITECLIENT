@@ -14,9 +14,9 @@
     <link rel="manifest" href="manifest.json" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/favicon180.png" sizes="180x180">
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/lgputih33.png" sizes="180x180">
+    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="16x16" type="image/png">
 
     <!-- Material icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,7 +38,7 @@
             <div class="align-self-center col">
                 <div class="logo-loading">
                     <div class="icon icon-100 mb-4 rounded-circle">
-                        <img src="img/favicon144.png" alt="" class="w-100">
+                        <img src="<?= base_url() ?>assets/img/lgbiru.png" alt="" class="w-100">
                     </div>
                     <h4 class="text-default">KWSG App</h4>
                     <p class="text-secondary">Mensejahterakan Anggota</p>
@@ -172,8 +172,8 @@
                     </button>
                 </div>
                 <div class="text-left col align-self-center">
-                    <a class="navbar-brand" href="#">
-                        <h5 class="mb-0">KWSGApp</h5>
+                    <a class="navbar-brand pl-5" href="#">
+                        <img src="<?= base_url() ?>assets/img/lgicon.png" alt="">
                     </a>
                 </div>
                 <div class="ml-auto col-auto pl-0">
@@ -192,55 +192,25 @@
                 </div>
             </div>
         </header>
-
         <div class="container mt-3 mb-4 text-center">
             <h2 class="text-white">Wahyu Maulana</h2>
-            <p class="text-white mb-4">KW10008</p>
+            <p class="text-white mb-4">ID Anggota : KW10008</p>
         </div>
 
         <div class="main-container">
             <!-- page content start -->
 
-            <div class="container mb-4 text-center">
-                <div class="card bg-default-secondary shadow-default">
-                    <div class="card-body">
-                        <!-- Swiper -->
-                        <div class="swiper-container addsendcarousel text-center">
-                            <div class="swiper-wrapper mb-4">
-                                <a href="add_money.html" class="swiper-slide text-white">
-                                    <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">add</span></div>
-                                    <p><small>Add Fund</small></p>
-                                </a>
-                                <a href="send_money.html" class="swiper-slide text-white">
-                                    <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">call_made</span></div>
-                                    <p><small>Send</small></p>
-                                </a>
-                                <a href="withdraw.html" class="swiper-slide text-white">
-                                    <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">call_received</span></div>
-                                    <p><small>Withdraw</small></p>
-                                </a>
-                                <a href="change_currency.html" class="swiper-slide text-white">
-                                    <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">swap_horiz</span></div>
-                                    <p><small>Change</small></p>
-                                </a>
-                                <a href="transactions.html" class="swiper-slide text-white">
-                                    <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">class</span></div>
-                                    <p><small>Passbuk</small></p>
-                                </a>
-                                <a href="" class="swiper-slide text-white">
-                                    <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">receipt</span></div>
-                                    <p><small>Receipt</small></p>
-                                </a>
-                            </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
+            <div class="container-fluid px-3 mb-4 mt-1">
+                <div class="card overflow-hidden">
+                    <div class="card-body p-0" style="height: 130px;">
+                        <div class="background">
+                            <img src="<?= base_url() ?>assets/img/fotosp.png" alt="" style="display: none;">
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Swiper -->
 
-            <div class="container mb-4">
+            <div class="container mb-2">
                 <div class="card">
                     <div class="card-body text-center ">
                         <div class="row justify-content-equal no-gutters">
