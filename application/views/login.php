@@ -83,16 +83,16 @@
                 <div class="col-12 align-self-center mb-4">
                     <div class="row justify-content-center">
                         <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-4">
-                            <h2 class="font-weight-normal mb-5">Login into<br>your account</h2>
-                            <div class="form-group float-label active">
-                                <input type="text" class="form-control text-white" value="MaxartBond">
-                                <label class="form-control-label text-white">Username/Email</label>
+                            <h2 class="font-weight-normal mb-5">Login ke<br>akun Anda</h2>
+                            <div class="form-group float-label position-relative">
+                                <input type="text" class="form-control text-white">
+                                <label class="form-control-label text-white">No Anggota</label>
                             </div>
                             <div class="form-group float-label position-relative">
                                 <input type="password" class="form-control text-white ">
-                                <label class="form-control-label text-white">Password</label>
+                                <label class="form-control-label text-white">PIN Kartu Sipintar</label>
                             </div>  
-                            <p class="text-right"><a href="forgot_password.html" class="text-white">Forgot Password?</a></p>
+                            <!-- <p class="text-right"><a href="forgot_password.html" class="text-white">Forgot Password?</a></p> -->
                         </div>
                     </div>
                 </div>
