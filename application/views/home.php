@@ -277,7 +277,7 @@
                 </a>
             </div>
             <div class="col-auto pl-3">
-                <a href="profile.html" class="">
+                <a href="<?= site_url('profile_c'); ?>" class="">
                     <i class="material-icons">account_circle</i>
                     <p>Profile</p>
                 </a>

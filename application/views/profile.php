@@ -229,7 +229,7 @@
             <div class="container">
                 <div class="card">
                     <div class="card-header">
-                        <h6 class="mb-0">App Services</h6>
+                        <h6 class="mb-0">Pengaturan Aplikasi</h6>
                     </div>
                     <div class="card-body px-0 pt-0">
                         <div class="list-group list-group-flush border-top border-color">
@@ -241,8 +241,8 @@
                                         </div>
                                     </div>
                                     <div class="col align-self-center pl-0">
-                                        <h6 class="mb-1">Language</h6>
-                                        <p class="text-secondary">Choose preffered language</p>
+                                        <h6 class="mb-1">Bahasa</h6>
+                                        <p class="text-secondary">Pilih sesuai bahasa anda</p>
                                     </div>
                                 </div>
                             </a>
@@ -254,7 +254,7 @@
                                         </div>
                                     </div>
                                     <div class="col align-self-center pl-0">
-                                        <h6 class="mb-1">Security Settings</h6>
+                                        <h6 class="mb-1">Pengaturan Keamanan</h6>
                                         <p class="text-secondary">Password</p>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                         </div>
                                     </div>
                                     <div class="col align-self-center pl-0">
-                                        <h6 class="mb-1">Notification Settings</h6>
+                                        <h6 class="mb-1">Pengaturan Notifikasi</h6>
                                         <p class="text-secondary">Customize notification receiving</p>
                                     </div>
                                 </div>
@@ -280,8 +280,8 @@
                                         </div>
                                     </div>
                                     <div class="col align-self-center pl-0">
-                                        <h6 class="mb-1">My Cards</h6>
-                                        <p class="text-secondary">Add, update, delete Credit Cards</p>
+                                        <h6 class="mb-1">Kartu saya</h6>
+                                        <p class="text-secondary">Sesuaikan dengan Credit Cards yang anda miliki</p>
                                     </div>
                                 </div>
                             </a>
@@ -293,7 +293,7 @@
                                         </div>
                                     </div>
                                     <div class="col align-self-center pl-0">
-                                        <h6 class="mb-1">My Address</h6>
+                                        <h6 class="mb-1">Alamat Saya</h6>
                                         <p class="text-secondary">Add, update, delete address</p>
                                     </div>
                                 </div>
