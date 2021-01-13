@@ -76,10 +76,9 @@
                     <p class="text-default-secondary">Saldo Tabungan Saya</p>
                 </div>
             </div>
-
             <ul class="nav nav-pills flex-column ">
                 <li class="nav-item">
-                    <a class="nav-link active" href="<?= site_url('Home_c') ?>">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'home_c' ? 'active' : ''; ?>" href="<?= site_url('home_c') ?>">
                         <div>
                             <span class="material-icons icon">account_balance</span>
                             Home
@@ -88,7 +87,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('Sipintar_c') ?>">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'sipintar_c' ? 'active' : ''; ?>" href="<?= site_url('sipintar_c') ?>">
                         <div>
                             <span class="material-icons icon">credit_card</span>
                             Sipintar
@@ -97,7 +96,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('InfoAnggota_c') ?>">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'infoAnggota_c' ? 'active' : ''; ?>" href="<?= site_url('infoAnggota_c') ?>">
                         <div>
                             <span class="material-icons icon">recent_actors</span>
                             Info Anggota
@@ -106,7 +105,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('Pembiayaan_c') ?>">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'pembiayaan_c' ? 'active' : ''; ?>" href="<?= site_url('pembiayaan_c') ?>">
                         <div>
                             <span class="material-icons icon">support_agent</span>
                             Pembiayaan
@@ -115,7 +114,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('Promo_c') ?>">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'promo_c' ? 'active' : ''; ?>" href="<?= site_url('promo_c') ?>">
                         <div>
                             <span class="material-icons icon">card_giftcard</span>
                             Promo
@@ -124,7 +123,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('Akswg_c') ?>">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'akwsg_c' ? 'active' : ''; ?>" href="<?= site_url('akwsg_c') ?>">
                         <div>
                             <span class="material-icons icon">info</span>
                             About KWSG
@@ -133,7 +132,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('Aapp_c') ?>">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'aapp_c' ? 'active' : ''; ?>" href="<?= site_url('aapp_c') ?>">
                         <div>
                             <span class="material-icons icon">perm_device_information</span>
                             About App
@@ -142,7 +141,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Setting_c">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'setting_c' ? 'active' : ''; ?>" href="setting_c">
                         <div>
                             <span class="material-icons icon">settings</span>
                             Settings
