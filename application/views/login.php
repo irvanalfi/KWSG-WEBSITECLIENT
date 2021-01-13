@@ -84,7 +84,7 @@
     <div class="footer no-bg-shadow py-3">
         <div class="row justify-content-center">
             <div class="col">
-                <a href="<?= base_url() ?>Home_c" class="btn btn-default rounded btn-block">Login</a>
+                <a href="<?= base_url() ?>home_c" class="btn btn-default rounded btn-block">Login</a>
             </div>
         </div>
     </div>

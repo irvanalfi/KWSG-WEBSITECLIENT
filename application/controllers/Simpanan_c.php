@@ -13,9 +13,7 @@ class Simpanan_c extends CI_Controller {
         // $data['title'] = 'Simpanan';
         // $data['t_saldo_simpanan'] = $this->Simpanan_m->getAllSimpananIDPegawai;
 
-        $this->load->view('simpanan');
+        $this->template->load('template', 'simpanan');
     }
 
 }
-
-?>

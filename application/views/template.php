@@ -96,15 +96,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $this->uri->segment(1) == 'infoAnggota_c' ? 'active' : ''; ?>" href="<?= site_url('infoAnggota_c') ?>">
-                        <div>
-                            <span class="material-icons icon">recent_actors</span>
-                            Info Anggota
-                        </div>
-                        <span class="arrow material-icons">chevron_right</span>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link <?= $this->uri->segment(1) == 'pembiayaan_c' ? 'active' : ''; ?>" href="<?= site_url('pembiayaan_c') ?>">
                         <div>
                             <span class="material-icons icon">support_agent</span>
@@ -114,10 +105,28 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'simpanan_c' ? 'active' : ''; ?>" href="<?= site_url('simpanan_c') ?>">
+                        <div>
+                            <span class="material-icons icon">monetization_on</span>
+                            Simpanan
+                        </div>
+                        <span class="arrow material-icons">chevron_right</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link <?= $this->uri->segment(1) == 'promo_c' ? 'active' : ''; ?>" href="<?= site_url('promo_c') ?>">
                         <div>
                             <span class="material-icons icon">card_giftcard</span>
                             Promo
+                        </div>
+                        <span class="arrow material-icons">chevron_right</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= $this->uri->segment(1) == 'infoAnggota_c' ? 'active' : ''; ?>" href="<?= site_url('infoAnggota_c') ?>">
+                        <div>
+                            <span class="material-icons icon">recent_actors</span>
+                            Info Anggota
                         </div>
                         <span class="arrow material-icons">chevron_right</span>
                     </a>
