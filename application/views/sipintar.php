@@ -7,15 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>Sipintar</title>
+    <title>KWSG</title>
 
     <!-- manifest meta -->
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.json" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/favicon180.png" sizes="180x180">
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/lgputih33.png" sizes="180x180">
+    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="16x16" type="image/png">
 
     <!-- Material icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +27,7 @@
     <!-- swiper CSS -->
     <link href="<?= base_url() ?>assets/vendor/swiper/css/swiper.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles-->
     <link href="<?= base_url() ?>assets/css/style.css" rel="stylesheet" id="style">
 </head>
 
@@ -66,18 +67,15 @@
                 </div>
             </div>
             <div class="col pl-3 text-left align-self-center">
-            <h6 class="mb-1">Wahyu Maulana</h6>
+                <h6 class="mb-1">Wahyu Maulana</h6>
                 <p class="small text-default-secondary">Gresik, Indonesia</p>
             </div>
         </div>
         <div class="menu-container">
             <div class="row mb-4">
                 <div class="col">
-                <h4 class="mb-1 font-weight-normal">Rp.154.800,00</h4>
+                    <h4 class="mb-1 font-weight-normal">Rp.154.800,00</h4>
                     <p class="text-default-secondary">Saldo Tabungan Saya</p>
-                </div>
-                <div class="col-auto">
-                    <button class="btn btn-default btn-40 rounded-circle" data-toggle="modal" data-target="#addmoney"><i class="material-icons">add</i></button>
                 </div>
             </div>
 
@@ -101,7 +99,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="analytics.html">
+                    <a class="nav-link" href="<?= base_url() ?>InfoAnggota_c">
                         <div>
                             <span class="material-icons icon">recent_actors</span>
                             Info Anggota
@@ -159,7 +157,6 @@
                 <a href="login.html" class="btn btn-outline-danger text-white rounded my-3 mx-auto">Sign out</a>
             </div>
         </div>
-
     </div>
     <div class="backdrop"></div>
 
@@ -175,8 +172,8 @@
                     </button>
                 </div>
                 <div class="text-left col align-self-center">
-                    <a class="navbar-brand" href="#">
-                        <h5 class="mb-0">KWSGApp</h5>
+                    <a class="navbar-brand pl-5" href="#">
+                        <img src="<?= base_url() ?>assets/img/lgicon.png" alt="">
                     </a>
                 </div>
                 <div class="ml-auto col-auto pl-0">
@@ -263,7 +260,7 @@
                 </a>
             </div>
             <div class="col-auto pl-3">
-                <a href="profile.html" class="">
+                <a href="<?= site_url('profile_c'); ?>" class="">
                     <i class="material-icons">account_circle</i>
                     <p>Profile</p>
                 </a>

@@ -31,17 +31,17 @@
     <link href="<?= base_url() ?>assets/css/style.css" rel="stylesheet" id="style">
 </head>
 
-<body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="homepage">
+<body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="profile">
     <!-- screen loader -->
     <div class="container-fluid h-100 loader-display">
         <div class="row h-100">
             <div class="align-self-center col">
                 <div class="logo-loading">
                     <div class="icon icon-100 mb-4 rounded-circle">
-                        <img src="<?= base_url() ?>assets/img/lgbiru.png" alt="" class="w-100">
+                        <img src="img/favicon144.png" alt="" class="w-100">
                     </div>
-                    <h4 class="text-default">KWSG App</h4>
-                    <p class="text-secondary">Mensejahterakan Anggota</p>
+                    <h4 class="text-default">Finwallapp</h4>
+                    <p class="text-secondary">Mobile HTML template</p>
                     <div class="loader-ellipsis">
                         <div></div>
                         <div></div>
@@ -52,6 +52,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- menu main -->
     <div class="main-menu">
@@ -190,68 +192,77 @@
                 </div>
             </div>
         </header>
-        <div class="container mt-3 mb-4 text-center">
-            <h2 class="text-white">Wahyu Maulana</h2>
-            <p class="text-white mb-4">ID Anggota : KW10008</p>
-        </div>
 
-        <div class="main-container">
-            <!-- page content start -->
-
-            <div class="container-fluid px-3 mb-4 mt-1">
-                <div class="card overflow-hidden">
-                    <div class="card-body p-0" style="height: 130px;">
-                        <div class="background">
-                            <img src="<?= base_url() ?>assets/img/fotosp.png" alt="" style="display: none;">
-                        </div>
-                    </div>
-                </div>
+        <!-- page content start -->
+        <div class="card-body p-0 h-150">
+            <div class="background">
+                <img src="<?= base_url() ?>assets/img/image10.jpg" alt="" style="display: none;">
             </div>
+        </div>
+        
+        <div class="main-container">
 
-            <div class="container mb-2">
+            <div class="container mb-4">
+            </div>
+            <div class="container">
                 <div class="card">
-                    <div class="card-body text-center ">
-                        <div class="row justify-content-equal no-gutters">
-                            <div class="col-4 col-md-2 mb-3">
-                            <a href="<?= base_url() ?>Sipintar_c">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">credit_card</span>
+                    <div class="card-header">
+                        <h6 class="mb-0">Info Anggota</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0">
+                        <div class="list-group list-group-flush border-top border-color">
+                            <a href="language.html" class="list-group-item list-group-item-action border-color">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">language</span>
+                                        </div>
+                                    </div>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">Formulir Pendaftaran</h6>
+                                        <!-- <p class="text-secondary">Choose preffered language</p> -->
+                                    </div>
                                 </div>
-                                <p class="text-secondary"><small>Sipintar</small></p>
                             </a>
-                            </div>
-                            <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">support_agent</span>
+                            <a href="security_settings.html" class="list-group-item list-group-item-action border-color">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">lock_open</span>
+                                        </div>
+                                    </div>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">Tabel Anggaran</h6>
+                                        <!-- <p class="text-secondary">App lock, Password</p> -->
+                                    </div>
                                 </div>
-                                <p class="text-secondary"><small>Pembiayaan</small></p>
-                            </div>
-                            <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">monetization_on</span>
-                                </div>
-                                <p class="text-secondary"><small>Simpanan</small></p>
-                            </div>
-                            <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">redeem</span>
-                                </div>
-                                <p class="text-secondary"><small>Promo</small></p>
-                            </div>
-                            <div class="col-4 col-md-2 mb-3">
-                            <a href="<?= base_url() ?>InfoAnggota_c">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">recent_actors</span>
-                                </div>
-                                <p class="text-secondary"><small>Info Anggota</small></p>
                             </a>
-                            </div>
-                            <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">info</span>
+                            <a href="notification_settings.html" class="list-group-item list-group-item-action border-color">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">notifications</span>
+                                        </div>
+                                    </div>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">Informasi</h6>
+                                        <!-- <p class="text-secondary">Customize notification receiving</p> -->
+                                    </div>
                                 </div>
-                                <p class="text-secondary"><small>About KWSG</small></p>
-                            </div>
+                            </a>
+                            <a href="my_cards.html" class="list-group-item list-group-item-action border-color">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                            <span class="material-icons">info</span>
+                                        </div>
+                                    </div>
+                                    <div class="col align-self-center pl-0">
+                                        <h6 class="mb-1">RKAP /  LPJ</h6>
+                                        <!-- <p class="text-secondary">Add, update, delete Credit Cards</p> -->
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -365,6 +376,7 @@
             <input type="radio" id="templatecolor14" name="sidebarcolorselect">
             <label for="templatecolor14" class="bg-gray" data-title="gray"></label>
         </div>
+
     </div>
 
 
@@ -385,11 +397,10 @@
     <script src="<?= base_url() ?>assets/js/main.js"></script>
     <script src="<?= base_url() ?>assets/js/color-scheme-demo.js"></script>
 
-    <!-- PWA app service registration and works -->
-    <script src="<?= base_url() ?>assets/js/pwa-services.js"></script>
 
     <!-- page level custom script -->
     <script src="<?= base_url() ?>assets/js/app.js"></script>
+    
 </body>
 
 </html>
