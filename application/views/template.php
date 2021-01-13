@@ -11,7 +11,7 @@
 
     <!-- manifest meta -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="<?= base_url() ?>assets/manifest.json" />
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/lgputih33.png" sizes="180x180">
@@ -314,9 +314,6 @@
     <!-- Customized jquery file  -->
     <script src="<?= base_url() ?>assets/js/main.js"></script>
     <script src="<?= base_url() ?>assets/js/color-scheme-demo.js"></script>
-
-    <!-- PWA app service registration and works -->
-    <script src="<?= base_url() ?>assets/js/pwa-services.js"></script>
 
     <!-- page level custom script -->
     <script src="<?= base_url() ?>assets/js/app.js"></script>
