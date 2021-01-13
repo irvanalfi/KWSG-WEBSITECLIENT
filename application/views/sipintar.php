@@ -117,6 +117,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="<?= site_url('Simpanan_c'); ?>">
+                        <div>
+                            <span class="material-icons icon">support_agent</span>
+                            Simpanan
+                        </div>
+                        <span class="arrow material-icons">chevron_right</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="gift_cards.html">
                         <div>
                             <span class="material-icons icon">card_giftcard</span>

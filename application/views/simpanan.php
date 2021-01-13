@@ -14,9 +14,9 @@
     <link rel="manifest" href="manifest.json" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/lgputih33.png" sizes="180x180">
-    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="<?= base_url() ?>assets/img/lgicon.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/favicon180.png" sizes="180x180">
+    <link rel="icon" href="<?= base_url() ?>assets/img/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="<?= base_url() ?>assets/img/favicon16.png" sizes="16x16" type="image/png">
 
     <!-- Material icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,7 +38,7 @@
             <div class="align-self-center col">
                 <div class="logo-loading">
                     <div class="icon icon-100 mb-4 rounded-circle">
-                        <img src="<?= base_url() ?>assets/img/lgbiru.png" alt="" class="w-100">
+                        <img src="img/favicon144.png" alt="" class="w-100">
                     </div>
                     <h4 class="text-default">KWSG App</h4>
                     <p class="text-secondary">Mensejahterakan Anggota</p>
@@ -52,8 +52,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!-- menu main -->
     <div class="main-menu">
@@ -101,15 +99,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="analytics.html">
                         <div>
-                            <span class="material-icons icon">recent_actors</span>
-                            Info Anggota
-                        </div>
-                        <span class="arrow material-icons">chevron_right</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="analytics.html">
-                        <div>
                             <span class="material-icons icon">support_agent</span>
                             Pembiayaan
                         </div>
@@ -117,9 +106,9 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('Simpanan_c'); ?>">
+                    <a class="nav-link" a href="<?= site_url('Simpanan_c')?>">
                         <div>
-                            <span class="material-icons icon">support_agent</span>
+                            <span class="material-icons icon">monetization_on</span>
                             Simpanan
                         </div>
                         <span class="arrow material-icons">chevron_right</span>
@@ -130,6 +119,15 @@
                         <div>
                             <span class="material-icons icon">card_giftcard</span>
                             Promo
+                        </div>
+                        <span class="arrow material-icons">chevron_right</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="analytics.html">
+                        <div>
+                            <span class="material-icons icon">recent_actors</span>
+                            Info Anggota
                         </div>
                         <span class="arrow material-icons">chevron_right</span>
                     </a>
@@ -169,7 +167,6 @@
     </div>
     <div class="backdrop"></div>
 
-
     <!-- Begin page content -->
     <main class="flex-shrink-0 main has-footer">
         <!-- Fixed navbar -->
@@ -181,8 +178,8 @@
                     </button>
                 </div>
                 <div class="text-left col align-self-center">
-                    <a class="navbar-brand pl-5" href="#">
-                        <img src="<?= base_url() ?>assets/img/lgicon.png" alt="">
+                    <a class="navbar-brand" href="#">
+                        <h5 class="mb-0">KWSGApp</h5>
                     </a>
                 </div>
                 <div class="ml-auto col-auto pl-0">
@@ -202,150 +199,165 @@
             </div>
         </header>
 
-        <div class="container mt-3 mb-3 text-center">
-            <h2 class="text-white">Rp.154.800,00</h2>
-            <p class="text-white mb-2">List Sipintar Kupon</p>
-            <span class="arrow material-icons" style="color: white !important;">expand_more</span>
+        <div class="container mt-3 mb-4 text-center">
+            <h2 class="text-white">Wahyu Maulana</h2>
+            <p class="text-white mb-4">KW10008</p>
         </div>
 
         <div class="main-container">
-            <!-- list -->
-            <div class="container">
-                <div class="card">
-                    <div class="card-body px-0">
-                        <div class="list-group list-group-flush">
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
+            <!-- page content start -->
+
+            <div class="container mb-4 text-center">
+            <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-2 pr-0">
+                                        <div class="avatar avatar-50 border-0 bg-default-light rounded-circle text-default">
+                                            <i class="material-icons vm text-template">local_atm</i>
+                                        </div>
                                     </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-31</small>
+                                    <div class="col-6 align-self-center">
+                                        <p>Simpanan Sukarela</p>
                                     </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-28</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 41.000</p>
+                                    <div class="col-4 align-self-center border-left">
+                                        <h6 class="mb-1">$ 1548.00</h6>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-27</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 35.000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-25</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-20</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 15.000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-15</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-03-10</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="wallet.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-danger rounded">indeterminate_check_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer SHU ke VMART-12</small>
-                                        <small style="color: blue;">2020-03-01</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 72.000</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="about.html" class="list-group-item list-group-item-action border-color">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <span class="material-icons icon btn-success rounded">add_box</span>
-                                    </div>
-                                    <div class="col-7">
-                                        <small>Transfer Dana SP dan SHU 2019 dari KWSG</small>
-                                        <small style="color: blue;">2020-02-29</small>
-                                    </div>
-                                    <div class="col-3 pull-right">
-                                        <p style="font-size: 10px; font-weight: bold;">Rp. 215.200</p>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-2 pr-0">
+                                        <div class="avatar avatar-50 border-0 bg-default-light rounded-circle text-default">
+                                            <i class="material-icons vm text-template">local_atm</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <p>Simpanan Pokok</p>
+                                    </div>
+                                    <div class="col-4 align-self-center border-left">
+                                        <h6 class="mb-1">$ 1548.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-2 pr-0">
+                                        <div class="avatar avatar-50 border-0 bg-default-light rounded-circle text-default">
+                                            <i class="material-icons vm text-template">local_atm</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <p>Simpanan Wajib</p>
+                                    </div>
+                                    <div class="col-4 align-self-center border-left">
+                                        <h6 class="mb-1">$ 1548.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-2 pr-0">
+                                        <div class="avatar avatar-50 border-0 bg-default-light rounded-circle text-default">
+                                            <i class="material-icons vm text-template">local_atm</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <p>Simpanan Khusus Permanen</p>
+                                    </div>
+                                    <div class="col-4 align-self-center border-left">
+                                        <h6 class="mb-1">$ 1548.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-2 pr-0">
+                                        <div class="avatar avatar-50 border-0 bg-default-light rounded-circle text-default">
+                                            <i class="material-icons vm text-template">local_atm</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <p>Simpanan Khusus Berjangka</p>
+                                    </div>
+                                    <div class="col-4 align-self-center border-left">
+                                        <h6 class="mb-1">$ 1548.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-2 pr-0">
+                                        <div class="avatar avatar-50 border-0 bg-default-light rounded-circle text-default">
+                                            <i class="material-icons vm text-template">local_atm</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-self-center">
+                                        <p>Simpanan Deposito</p>
+                                    </div>
+                                    <div class="col-4 align-self-center border-left">
+                                        <h6 class="mb-1">$ 1548.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        
+        </div>
+    </div>
+</main>
+
+    <!-- footer-->
+    <div class="footer">
+        <div class="row no-gutters justify-content-center">
+            <div class="col-auto pl-2">
+                <a href="index.html" class="active">
+                    <i class="material-icons">home</i>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="col-auto pl-3">
+                <a href="wallet.html" class="">
+                    <i class="material-icons">account_balance_wallet</i>
+                    <p>Wallet</p>
+                </a>
+            </div>
+            <div class="col-auto pl-3">
+                <a href="shop.html" class="">
+                    <i class="material-icons">perm_device_information</i>
+                    <p>About Apss</p>
+                </a>
+            </div>
+            <div class="col-auto pl-3">
+                <a href="profile.html" class="">
+                    <i class="material-icons">account_circle</i>
+                    <p>Profile</p>
+                </a>
             </div>
         </div>
-    </main>
+    </div>
 
 
     <!-- color settings style switcher -->
