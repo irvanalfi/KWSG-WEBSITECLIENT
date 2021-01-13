@@ -10,10 +10,10 @@ class Sipintar_c extends CI_Controller
         //Do your magic here
     }
 
-    // public function index()
-    // {
-    //     $this->load->view('home');
-    // }
+    public function index()
+    {
+        $this->load->view('sipintar');
+    }
 
     public function sipintarKupon()
     {

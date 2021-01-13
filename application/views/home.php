@@ -88,7 +88,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="analytics.html">
+                    <a class="nav-link" href="<?= base_url() ?>Sipintar_c">
                         <div>
                             <span class="material-icons icon">credit_card</span>
                             Sipintar
@@ -213,10 +213,12 @@
                     <div class="card-body text-center ">
                         <div class="row justify-content-equal no-gutters">
                             <div class="col-4 col-md-2 mb-3">
+                            <a href="<?= base_url() ?>Sipintar_c">
                                 <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
                                     <span class="material-icons">credit_card</span>
                                 </div>
                                 <p class="text-secondary"><small>Sipintar</small></p>
+                            </a>
                             </div>
                             <div class="col-4 col-md-2 mb-3">
                                 <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
