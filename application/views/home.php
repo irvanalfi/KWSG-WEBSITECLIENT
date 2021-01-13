@@ -115,15 +115,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('Simpanan_c'); ?>">
-                        <div>
-                            <span class="material-icons icon">support_agent</span>
-                            Simpanan
-                        </div>
-                        <span class="arrow material-icons">chevron_right</span>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="gift_cards.html">
                         <div>
                             <span class="material-icons icon">card_giftcard</span>
@@ -222,49 +213,57 @@
                     <div class="card-body text-center ">
                         <div class="row justify-content-equal no-gutters">
                             <div class="col-4 col-md-2 mb-3">
-                            <a href="<?= base_url() ?>Sipintar_c">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">credit_card</span>
-                                </div>
-                                <p class="text-secondary"><small>Sipintar</small></p>
-                            </a>
+                                <a href="<?= base_url() ?>Sipintar_c">
+                                    <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
+                                        <span class="material-icons">credit_card</span>
+                                    </div>
+                                    <p class="text-secondary"><small>Sipintar</small></p>
+                                </a>
                             </div>
                             <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">support_agent</span>
-                                </div>
-                                <p class="text-secondary"><small>Pembiayaan</small></p>
+                                <a href="<?= base_url() ?>Sipintar_c">
+                                    <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
+                                        <span class="material-icons">support_agent</span>
+                                    </div>
+                                    <p class="text-secondary"><small>Pembiayaan</small></p>
+                                </a>
                             </div>
                             <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">monetization_on</span>
-                                </div>
-                                <p class="text-secondary"><small>Simpanan</small></p>
+                                <a href="<?= base_url() ?>Simpanan_c">
+                                    <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
+                                        <span class="material-icons">monetization_on</span>
+                                    </div>
+                                    <p class="text-secondary"><small>Simpanan</small></p>
+                                </a>
                             </div>
                             <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">redeem</span>
-                                </div>
-                                <p class="text-secondary"><small>Promo</small></p>
+                                <a href="<?= base_url() ?>Promo_c">
+                                    <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
+                                        <span class="material-icons">redeem</span>
+                                    </div>
+                                    <p class="text-secondary"><small>Promo</small></p>
+                                </a>
                             </div>
                             <div class="col-4 col-md-2 mb-3">
-                            <a href="<?= base_url() ?>InfoAnggota_c">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">recent_actors</span>
-                                </div>
-                                <p class="text-secondary"><small>Info Anggota</small></p>
-                            </a>
+                                <a href="<?= base_url() ?>InfoAnggota_c">
+                                    <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
+                                        <span class="material-icons">recent_actors</span>
+                                    </div>
+                                    <p class="text-secondary"><small>Info Anggota</small></p>
+                                </a>
                             </div>
                             <div class="col-4 col-md-2 mb-3">
-                                <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
-                                    <span class="material-icons">info</span>
-                                </div>
-                                <p class="text-secondary"><small>About KWSG</small></p>
+                                <a href="<?= base_url() ?>Akwsg_c">
+                                    <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default">
+                                        <span class="material-icons">info</span>
+                                    </div>
+                                    <p class="text-secondary"><small>About KWSG</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
