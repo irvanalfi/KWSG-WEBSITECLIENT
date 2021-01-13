@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Login_c extends CI_Controller
+class Auth_c extends CI_Controller
 {
 
     public function __construct()
@@ -10,8 +10,13 @@ class Login_c extends CI_Controller
         //Do your magic here
     }
 
-    public function index()
+    public function login()
     {
         $this->load->view('login');
+    }
+
+    public function logout()
+    {
+        // session_destroy();
     }
 }

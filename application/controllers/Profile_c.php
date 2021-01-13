@@ -13,7 +13,6 @@ class Profile_c extends CI_Controller
 
     public function index()
     {
-        $this->load->view('profile');
-        // $this->template->load('template_c', 'client/home', $data);
+        $this->template->load('template', 'profile');
     }
 }

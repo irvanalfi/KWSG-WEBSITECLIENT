@@ -12,29 +12,17 @@ class Sipintar_c extends CI_Controller
 
     public function index()
     {
-        $this->load->view('sipintar');
-    }
-
-    public function sipintarKupon()
-    {
-        $this->load->view('sipintarKupon');
-    }
-
-    public function sipintarShu()
-    {
-        $this->load->view('sipintarShu');
+        $this->template->load('template', 'sipintar');
     }
 
     public function listSipintarKupon()
     {
-        // iki gae detail sipintar kupon
-        $this->load->view('listSipintarKupon');
+        $this->template->load('template2', 'listSipintarKupon');
     }
 
     public function listSipintarShu()
     {
-        // iki gae detail sipintar shu
-        $this->load->view('listSipintarShu');
+        $this->template->load('template2', 'listSipintarShu');
     }
 
     public function detailSipintarKupon()
