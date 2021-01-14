@@ -1,14 +1,16 @@
-<div class="container mt-3 mb-4 text-center">
-    <h2 class="text-white">Wahyu Maulana</h2>
-    <p class="text-white mb-4">ID Anggota : KW10008</p>
-</div>
 <div class="main-container">
     <div class="container">
+        <div class="background">
+            <img src="<?= base_url() ?>assets/img/bgkwsg.png" alt="" style="display: none;">
+        </div>
+        <div class="container mt-3 mb-4 text-center">
+            <h2 class="text-white shadow">Sipintar</h2>
+        </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <ul class="nav nav-tabs justify-content-center" role="tablist">
+                        <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="tabhome1230-tab" data-toggle="tab" href="#tabhome1230" role="tab" aria-controls="tabhome1230" aria-selected="true">
                                     Sipintar Kupon
@@ -104,41 +106,5 @@
                 </div>
             </div>
         </div>
-        <!-- Swiper -->
-        <!-- <div class="swiper-container offerslidetab1">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="card overflow-hidden">
-                        <div class="background opacity-30">
-                            <img src="<?= base_url() ?>assets/img/bgkwsg.png" alt="">
-                        </div>
-                        <div class="card-body text-white">
-                            <h3 class="font-weight-normal">50% off<br>Winter Collection</h3>
-                            <p class="text-mute">Best product and collections</p>
-                            <div class="text-right">
-                                <a href="" class="btn btn-sm btn-default rounded">Show Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card overflow-hidden">
-                        <div class="background opacity-30">
-                            <img src="<?= base_url() ?>assets/img/bgkwsg.png" alt="">
-                        </div>
-                        <div class="card-body text-white">
-                            <h3 class="font-weight-normal">10% Instant<br>on Credit Cards</h3>
-                            <p class="text-mute">Best product and collections</p>
-                            <div class="text-right">
-                                <a href="" class="btn btn-sm btn-default rounded">Show Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination white-pagination text-left pl-2 mb-3"></div>
-        </div> -->
     </div>
-
 </div>

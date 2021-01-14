@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class InfoAnggota_c extends CI_Controller
+class Pembiayaan_c extends CI_Controller
 {
 
     public function __construct()
@@ -12,6 +12,6 @@ class InfoAnggota_c extends CI_Controller
 
     public function index()
     {
-        $this->template->load('template', 'infoAnggota');
+        $this->template->load('template', 'pembiayaan');
     }
 }
