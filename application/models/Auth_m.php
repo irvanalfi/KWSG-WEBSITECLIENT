@@ -10,7 +10,8 @@ class Auth_m extends CI_Model {
         $this->db->from('m_pass a');
         $this->db->join('mas_peg b', 'a.user_name=b.NO_PEG');
         $this->db->join('tab_unit c', 'b.KD_UNIT=c.KD_UNIT');
-        $this->db->where('a.user_name', $id);
+        $this->db->where('a.user_name', $user_name);
+        $this->db->where('a.pass', $pass);
         $query = $this->db->get();
         if ($query->num_rows() == 0) {
             return false;
