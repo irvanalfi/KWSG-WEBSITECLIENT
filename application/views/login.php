@@ -55,41 +55,33 @@
 
     <!-- Begin page content -->
     <main class="flex-shrink-0 main has-footer">
-
-        <div class="container h-100 text-white">
-            <div class="row h-100">
-                <div class="col-12 align-self-center mb-4">
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-4">
-                            <img src="<?= base_url() ?>assets/img/lgputih.png" alt="" style="width: 90px; height: 50px;">
-                            <h5 class="font-weight-normal mb-5 mt-4">Silahkan login ke<br>akun Anda</h5>
-                            <div class="form-group float-label position-relative">
-                                <input type="text" class="form-control text-white">
-                                <label class="form-control-label text-white">No Anggota</label>
+        <!-- form login -->
+        <form action="<?= site_url('auth_c/process'); ?>" method="post">
+            <div class="container h-100 text-white">
+                <div class="row h-100">
+                    <div class="col-12 align-self-center mb-4">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-4 mt-5">
+                                <img src="<?= base_url() ?>assets/img/lgputih.png" alt="" style="width: 90px; height: 50px;">
+                                <h5 class="font-weight-normal mb-5 mt-4">Silahkan login <br>menggunakan akun Anda</h5>
+                                <div class="form-group float-label position-relative">
+                                    <input type="text" name="no_ang" id="no_ang" class="form-control text-white" required>
+                                    <label class="form-control-label text-white">No Anggota</label>
+                                </div>
+                                <div class="form-group float-label position-relative">
+                                    <input type="password" name="pin" id="pin" class="form-control text-white " required>
+                                    <label class="form-control-label text-white">PIN Kartu Sipintar</label>
+                                </div>
+                                <button type="submit" name="login" class="mb-2 mt-3 btn btn-default rounded btn-block shadow">Login</button>
+                                <!-- <p class="text-right"><a href="forgot_password.html" class="text-white">Forgot Password?</a></p> -->
                             </div>
-                            <div class="form-group float-label position-relative">
-                                <input type="password" class="form-control text-white ">
-                                <label class="form-control-label text-white">PIN Kartu Sipintar</label>
-                            </div>
-                            <!-- <p class="text-right"><a href="forgot_password.html" class="text-white">Forgot Password?</a></p> -->
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
+        </form>
+        <!-- end form -->
     </main>
-
-    <!-- footer-->
-    <div class="footer no-bg-shadow py-3">
-        <div class="row justify-content-center">
-            <div class="col">
-                <a href="<?= base_url() ?>home_c" class="btn btn-default rounded btn-block">Login</a>
-            </div>
-        </div>
-    </div>
-
-
     <!-- Required jquery and libraries -->
     <script src="<?= base_url() ?>assets/js/jquery-3.3.1.min.js"></script>
     <script src="<?= base_url() ?>assets/js/popper.min.js"></script>
