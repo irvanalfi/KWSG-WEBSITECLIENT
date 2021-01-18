@@ -55,15 +55,20 @@
 
     <!-- Begin page content -->
     <main class="flex-shrink-0 main has-footer">
+        <div class="background">
+            <img src="<?= base_url() ?>assets/img/bgkwsg1.png" alt="" style="display: none;">
+        </div>
         <!-- form login -->
         <form action="<?= site_url('auth_c/process'); ?>" method="post">
             <div class="container h-100 text-white">
                 <div class="row h-100">
                     <div class="col-12 align-self-center mb-4">
                         <div class="row justify-content-center">
-                            <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-4 mt-5">
+                            <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-4 mt-4">
                                 <img src="<?= base_url() ?>assets/img/lgputih.png" alt="" style="width: 90px; height: 50px;">
-                                <h5 class="font-weight-normal mb-5 mt-4">Silahkan login <br>menggunakan akun Anda</h5>
+                                <h4 class="font-weight-normal mt-3">Selamat Datang</h4>
+                                <h5 class="font-weight-normal">Di KWSG Mobile</h5>
+                                <p class="mb-5 mt-4">Silahkan Login Menggunakan Akun Anda</p>
                                 <div class="form-group float-label position-relative">
                                     <input type="text" name="no_ang" id="no_ang" class="form-control text-white" required>
                                     <label class="form-control-label text-white">No Anggota</label>
@@ -72,7 +77,7 @@
                                     <input type="password" name="pin" id="pin" class="form-control text-white " required>
                                     <label class="form-control-label text-white">PIN Kartu Sipintar</label>
                                 </div>
-                                <button type="submit" name="login" class="mb-2 mt-3 btn btn-default rounded btn-block shadow">Login</button>
+                                <button type="submit" name="login" class="mb-2 mt-3 btn btn-primary rounded btn-block shadow">Login</button>
                                 <!-- <p class="text-right"><a href="forgot_password.html" class="text-white">Forgot Password?</a></p> -->
                             </div>
                         </div>
