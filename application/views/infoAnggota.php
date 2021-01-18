@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="col align-self-center pl-0">
-                                <h6 class="mb-1">RKAP /  LPJ</h6>
+                                <h6 class="mb-1">RKAP / LPJ</h6>
                             </div>
                         </div>
                     </a>
@@ -67,16 +67,22 @@
     </div>
 </div>
 
-<div class="col-auto pl-12">
-    <div class="background opacity-10">
-        <img src="<?= base_url() ?>assets/img/lelang1.png" alt="">
-    </div>
-    <div class="card-body text-white">
-        <img src="<?= base_url() ?>assets/img/lgicon.png" alt="">
-        <h6 class="font-weight-normal">INFO LELANG</h6>
-        <p>Lelang aset, keset, roket, kampret</p>
-        <div class="text-right">
-            <a href="#" class="btn btn-sm btn-default rounded"><span class="material-icons">get_app</span> Download</a>
+<div class="swiper-container">
+    <div class="swiper-wrapper pb-3">
+        <div class="swiper-slide">
+            <div class="card overflow-hidden">
+                <div class="background opacity-50">
+                    <img src="<?= base_url() ?>assets/img/renker.png" alt="">
+                </div>
+                <div class="card-body text-white">
+                    <img src="<?= base_url() ?>assets/img/lgicon.png" alt="">
+                    <h6 class="font-weight-normal">RENCANA KERJA</h6>
+                    <h6 class="font-weight-normal">DAN ANGGARAN 2020</h6>
+                    <div class="text-left">
+                        <a href="#" class="btn btn-sm btn-default rounded"><span class="material-icons">get_app</span> Download</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

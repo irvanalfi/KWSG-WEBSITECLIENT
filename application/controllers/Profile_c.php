@@ -15,4 +15,21 @@ class Profile_c extends CI_Controller
     {
         $this->template->load('template', 'profile');
     }
+
+    public function bahasa()
+    {
+        $this->template->load('template', 'bahasa');
+    }
+    public function password()
+    {
+        $this->template->load('template', 'password');
+    }
+    public function kartu()
+    {
+        $this->template->load('template', 'kartu');
+    }
+    public function alamat()
+    {
+        $this->template->load('template', 'alamat');
+    }
 }

@@ -39,7 +39,7 @@
             </div>
             <div class="card-body px-0 pt-0">
                 <div class="list-group list-group-flush border-top border-color">
-                    <a href="language.html" class="list-group-item list-group-item-action border-color">
+                    <a href="<?= site_url('profile_c/bahasa'); ?>" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
@@ -52,7 +52,20 @@
                             </div>
                         </div>
                     </a>
-                    <a href="security_settings.html" class="list-group-item list-group-item-action border-color">
+                    <a href="<?= site_url('profile_c/alamat'); ?>" class="list-group-item list-group-item-action border-color">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-50 bg-default-light text-default rounded">
+                                    <span class="material-icons">location_city</span>
+                                </div>
+                            </div>
+                            <div class="col align-self-center pl-0">
+                                <h6 class="mb-1">Alamat Saya</h6>
+                                <p class="text-secondary">Tambah, ubah, hapus alamat</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="<?= site_url('profile_c/password'); ?>" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
@@ -65,7 +78,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="notification_settings.html" class="list-group-item list-group-item-action border-color">
+                    <a href="#" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
@@ -74,11 +87,11 @@
                             </div>
                             <div class="col align-self-center pl-0">
                                 <h6 class="mb-1">Pengaturan Notifikasi</h6>
-                                <p class="text-secondary">Customize notification receiving</p>
+                                <p class="text-secondary">Customize notifikasi yang di terima</p>
                             </div>
                         </div>
                     </a>
-                    <a href="my_cards.html" class="list-group-item list-group-item-action border-color">
+                    <a href="<?= site_url('profile_c/kartu'); ?>" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
@@ -91,20 +104,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="my_address.html" class="list-group-item list-group-item-action border-color">
-                        <div class="row">
-                            <div class="col-auto">
-                                <div class="avatar avatar-50 bg-default-light text-default rounded">
-                                    <span class="material-icons">location_city</span>
-                                </div>
-                            </div>
-                            <div class="col align-self-center pl-0">
-                                <h6 class="mb-1">Alamat Saya</h6>
-                                <p class="text-secondary">Add, update, delete address</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="login.html" class="list-group-item list-group-item-action border-color">
+                    <a href="<?= site_url('auth_c/logout'); ?>" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-danger-light text-danger rounded">
@@ -113,7 +113,7 @@
                             </div>
                             <div class="col align-self-center pl-0">
                                 <h6 class="mb-1">Logout</h6>
-                                <p class="text-secondary">Logout from the application</p>
+                                <p class="text-secondary">Logout dari aplikasi</p>
                             </div>
                         </div>
                     </a>
