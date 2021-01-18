@@ -3,8 +3,8 @@
         <div class="background">
             <img src="<?= base_url() ?>assets/img/bgkwsg.png" alt="" style="display: none;">
         </div>
-        <div class="container mt-3 mb-4 text-center">
-            <h2 class="text-white shadow">Sipintar</h2>
+        <div class="container mt-2 mb-3 text-center">
+            <h2 class="text-white" style="text-shadow: 2px 2px 3px #000000">Sipintar</h2>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
