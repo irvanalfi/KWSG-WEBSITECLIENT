@@ -170,7 +170,7 @@
     <!-- Begin page content -->
     <main class="flex-shrink-0 main has-footer">
         <!-- Fixed navbar -->
-        <header class="header">
+        <header class="header shadow">
             <div class="row">
                 <div class="col-auto px-0">
                     <button class="menu-btn btn btn-40 btn-link" type="button">
