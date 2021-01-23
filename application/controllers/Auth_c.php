@@ -37,6 +37,7 @@ class Auth_c extends CI_Controller
             $this->session->set_userdata($params1);
             // var_dump($params1);
             // die();
+            // berhasil login 
             echo "<script>
             alert('selamat login berhasil');
             window.location='" . site_url('home_c') . "';
@@ -48,16 +49,15 @@ class Auth_c extends CI_Controller
                 'username' => $row->nm_ang
             );
             $this->session->set_userdata($params2);
-            var_dump($params2);
-            die();
+            // var_dump($params2);
+            // die();
+            // berhasil login 
             echo "<script>
             alert('selamat login berhasil');
             window.location='" . site_url('home_c') . "';
             </script>";
-            // berhasil login 
-
         } else {
-            // jika query gagal di load 
+            // jika tidak terdaftar atau gagal
             echo "<script>alert('anda gagal login');
             window.location='" . site_url('auth_c/login') . "';
             </script>";
