@@ -2,22 +2,36 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Auth_m extends CI_Model {
+class Auth_m extends CI_Model
+{
 
-    public function auth($user_name, $pass)
+    public function pegawai($post)
     {
-        $this->db->select('a.user_name, a.nama, a.pass, b.KD_JAB as kd_jab, c.NM_UNIT as nama_unit, b.KD_UNIT as kd_unit_sdm, c.KD_WILAYAH_AKUN as kd_wilayah_akun, c.KD_GROUP_AKUN as kd_group_akun, c.KD_UNIT_AKUN as kd_unit_akun');
-        $this->db->from('m_pass a');
-        $this->db->join('mas_peg b', 'a.user_name=b.NO_PEG');
-        $this->db->join('tab_unit c', 'b.KD_UNIT=c.KD_UNIT');
-        $this->db->where('a.user_name', $user_name);
-        $this->db->where('a.pass', $pass);
+        $this->db->select('*');
+        $this->db->from('m_pass');
+        $this->db->where('user_name', $post['username']);
+        $this->db->where('pass', md5($post['password']));
         $query = $this->db->get();
-        if ($query->num_rows() == 0) {
-            return false;
-        } else {
-            return $query->result_array();
-        }
+        return $query;
+
+        // $this->db->select('*');
+        // $this->db->from('m_pass');
+        // $this->db->join('mas_peg', 'mas_peg.NO_PEG = m_pass.user_name');
+        // $this->db->where('user_name', $post['username']);
+        // $this->db->where('pass', md5($post['password']));
+        // $query = $this->db->get();
+        // return $query;
+    }
+
+    public function anggota($post)
+    {
+        $this->db->select('tbl_ang.nm_ang, tbl_ang.no_ang');
+        $this->db->from('tbl_ang');
+        $this->db->join('registernasabah', 'tbl_ang.no_ang = registernasabah.no_ang');
+        $this->db->where('tbl_ang.no_ang', $post['username']);
+        $this->db->where('registernasabah.password', md5($post['password']));
+        $this->db->where('registernasabah.password', 0);
+        $query = $this->db->get();
+        return $query;
     }
 }
-?>

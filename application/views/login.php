@@ -70,11 +70,11 @@
                                 <h5 class="font-weight-normal">Di KWSG Mobile</h5>
                                 <p class="mb-5 mt-4">Silahkan Login Menggunakan Akun Anda</p>
                                 <div class="form-group float-label position-relative">
-                                    <input type="text" name="no_ang" id="no_ang" class="form-control text-white" required>
-                                    <label class="form-control-label text-white">No Anggota</label>
+                                    <input type="text" name="username" id="username" class="form-control text-white" required>
+                                    <label class="form-control-label text-white">No Anggota / No Pegawai</label>
                                 </div>
                                 <div class="form-group float-label position-relative">
-                                    <input type="password" name="pin" id="pin" class="form-control text-white " required>
+                                    <input type="password" name="password" id="password" class="form-control text-white " required>
                                     <label class="form-control-label text-white">PIN Kartu Sipintar</label>
                                 </div>
                                 <button type="submit" name="login" class="mb-2 mt-3 btn btn-primary rounded btn-block shadow">Login</button>
