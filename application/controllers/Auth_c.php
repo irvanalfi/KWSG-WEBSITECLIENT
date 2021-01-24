@@ -32,11 +32,10 @@ class Auth_c extends CI_Controller
             // jika pegawai/karyawan
             $row = $queryPegawai->row();
             $params1 = array(
-                'username' => $row->nama
+                'username'  => $row->nama,
+                'status'    => 'pegawai'
             );
             $this->session->set_userdata($params1);
-            // var_dump($params1);
-            // die();
             // berhasil login 
             echo "<script>
             alert('selamat login berhasil');
@@ -46,7 +45,8 @@ class Auth_c extends CI_Controller
             // jika anggota
             $row = $queryAnggota->row();
             $params2 = array(
-                'username' => $row->nm_ang
+                'username'  => $row->nm_ang,
+                'status'    => 'anggota'
             );
             $this->session->set_userdata($params2);
             // var_dump($params2);

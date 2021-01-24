@@ -65,17 +65,16 @@
                 </div>
             </div>
             <div class="col pl-3 text-left align-self-center">
-                <h6 class="mb-1">Wahyu Maulana</h6>
-                <p class="small text-default-secondary">Gresik, Indonesia</p>
+                <h6 class="mb-1">
+                    <?php if ($who == 'pegawai') {
+                        echo "$row->nama";
+                    } else {
+                        echo "$row->nm_ang";
+                    } ?>
+                </h6>
             </div>
         </div>
         <div class="menu-container">
-            <div class="row mb-4">
-                <div class="col">
-                    <h4 class="mb-1 font-weight-normal">Rp.154.800,00</h4>
-                    <p class="text-default-secondary">Saldo Tabungan Saya</p>
-                </div>
-            </div>
             <ul class="nav nav-pills flex-column ">
                 <li class="nav-item">
                     <a class="nav-link <?= $this->uri->segment(1) == 'home_c' ? 'active' : ''; ?>" href="<?= site_url('home_c') ?>">

@@ -34,4 +34,26 @@ class Auth_m extends CI_Model
         $query = $this->db->get();
         return $query;
     }
+
+    public function get_pegawai($where)
+    {
+        $this->db->from('m_pass');
+        if ($where != null) {
+            // kondisi untuk menampilkan satu baris data saja jika ada parameter
+            $this->db->where('nama', $where);
+        }
+        $query = $this->db->get();
+        return $query;
+    }
+
+    public function get_anggota($where)
+    {
+        $this->db->from('tbl_ang');
+        if ($where != null) {
+            // kondisi untuk menampilkan satu baris data saja jika ada parameter
+            $this->db->where('nm_ang', $where);
+        }
+        $query = $this->db->get();
+        return $query;
+    }
 }

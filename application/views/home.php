@@ -1,7 +1,19 @@
 <!-- title (name) -->
 <div class="container mt-3 mb-4 text-center">
-    <h2 class="text-white">Wahyu Maulana</h2>
-    <p class="text-white mb-4">ID Anggota : KW10008</p>
+    <h2 class="text-white">
+        <?php if ($who == 'pegawai') {
+            echo "$row->nama";
+        } else {
+            echo "$row->nm_ang";
+        } ?>
+    </h2>
+    <p class="text-white mb-4">No Pegawai / ID Anggota :
+        <?php if ($who == 'pegawai') {
+            echo "$row->user_name";
+        } else {
+            echo "$row->no_ang";
+        } ?>
+    </p>
 </div>
 
 <div class="main-container">
