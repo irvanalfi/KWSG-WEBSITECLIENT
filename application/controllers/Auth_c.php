@@ -33,6 +33,7 @@ class Auth_c extends CI_Controller
             $row = $queryPegawai->row();
             $params1 = array(
                 'username'  => $row->nama,
+                'nopeg'     => $row->user_name,
                 'status'    => 'pegawai'
             );
             $this->session->set_userdata($params1);
@@ -46,6 +47,7 @@ class Auth_c extends CI_Controller
             $row = $queryAnggota->row();
             $params2 = array(
                 'username'  => $row->nm_ang,
+                'noang'     => $row->no_ang,
                 'status'    => 'anggota'
             );
             $this->session->set_userdata($params2);
