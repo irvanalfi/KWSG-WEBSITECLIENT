@@ -13,8 +13,14 @@
                     </div>
                 </div>
                 <div class="col-10">
-                    <h6 class="mb-0">WAHYU MAULANA</h6>
-                    <p class="text-secondary">KW10008</p>
+                    <h6 class="mb-0"><?= $username ?></h6>
+                    <p class="text-secondary">
+                        <?php if ($status == 'pegawai') {
+                            echo "$nopeg";
+                        } else {
+                            echo "$noang";
+                        } ?>
+                    </p>
                 </div>
             </div>
             <div class="container">
