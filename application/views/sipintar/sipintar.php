@@ -35,7 +35,7 @@
                                         </button>
                                     </div>
                                     <div class="col-7">
-                                        <h6 class="mb-1"><?php echo $row['SaldoAkhir'] ?></h6>
+                                        <h6 class="mb-1"><?php echo $row ?></h6>
                                         <p class="text-secondary">updated at 2020-03-30</p>
                                     </div>
                                     <div class="col-3 pl-0">
