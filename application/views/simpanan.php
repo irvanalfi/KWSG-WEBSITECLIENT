@@ -1,6 +1,14 @@
 <div class="container mt-3 mb-4 text-center">
-    <h2 class="text-white">Wahyu Maulana</h2>
-    <p class="text-white mb-4">ID Anggota : KW10008</p>
+    <h2 class="text-white">
+        <?= $username ?>
+    </h2>
+    <p class="text-white mb-4">No Pegawai / ID Anggota :
+        <?php if ($status == 'pegawai') {
+            echo "$nopeg";
+        } else {
+            echo "$noang";
+        } ?>
+    </p>
 </div>
 
 <div class="main-container">
