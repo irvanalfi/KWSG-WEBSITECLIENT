@@ -7,8 +7,8 @@
             <h2 class="text-white" style="text-shadow: 2px 2px 3px #000000">Sipintar</h2>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card mb-4">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card mb-12">
                     <div class="card-header">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
@@ -35,7 +35,7 @@
                                         </button>
                                     </div>
                                     <div class="col-7">
-                                        <h6 class="mb-1"><?php $row; ?></h6>
+                                        <h6 class="mb-1"><?php echo $row['SaldoAkhir'] ?></h6>
                                         <p class="text-secondary">updated at 2020-03-30</p>
                                     </div>
                                     <div class="col-3 pl-0">
