@@ -26,6 +26,7 @@
                     <div class="card-body">
                         <div class="tab-content">
                             <div class="tab-pane fade active show" id="tabhome1230" role="tabpanel" aria-labelledby="tabhome1230-tab">
+                                
                                 <h5>Saldo Kupon Sipintar Anda</h5>
                                 <hr>
                                 <div class="row">
@@ -35,13 +36,14 @@
                                         </button>
                                     </div>
                                     <div class="col-7">
-                                        <h6 class="mb-1"><?php echo $row ?></h6>
-                                        <p class="text-secondary">updated at 2020-03-30</p>
+                                        <h6 class="mb-1"><?= indo_currency($kupon->SaldoAkhir) ?></h6>
+                                        <p class="text-secondary">updated at <?= indo_date($kupon->DateTime) ?></p>
                                     </div>
                                     <div class="col-3 pl-0">
                                         <a href="<?= site_url('sipintar_c/listSipintarKupon'); ?>" class="btn btn-sm btn-default rounded">Detail</a>
                                     </div>
                                 </div>
+                                
                                 <hr class=" mb-4">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper pb-3">
@@ -73,8 +75,8 @@
                                         </button>
                                     </div>
                                     <div class="col-7">
-                                        <h6 class="mb-1">Rp. 260.000,00</h6>
-                                        <p class="text-secondary">updated at 2020-03-30</p>
+                                        <h6 class="mb-1"><?= indo_currency($shu->SaldoAkhir) ?></h6>
+                                        <p class="text-secondary">updated at <?= indo_date($shu->DateTime) ?></p>
                                     </div>
                                     <div class="col-3 pl-0">
                                         <a href="<?= site_url('sipintar_c/listSipintarShu'); ?>" class="btn btn-sm btn-default rounded">Detail</a>

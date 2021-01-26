@@ -25,13 +25,14 @@ class Sipintar_c extends CI_Controller
             ];
             $this->template->load('template', 'sipintar/sipintar', $data);
         } else {
-            $query      = $this->Sipintar_m->kupon('noang');
-            $query2     = $this->Sipintar_m->shu('noang');
-            $kupon      = $query->row();
-            $shu        = $query2->row();
+            $where      = $this->CI->session->userdata('noang');
+            $queryKupon = $this->Sipintar_m->kupon($where);
+            $queryShu   = $this->Sipintar_m->shu($where);
+            $kupon      = $queryKupon->row();
+            $shu        = $queryShu->row();
             $data       = [
-                'row'       => $kupon,
-                'row'       => $shu,
+                'kupon'     => $kupon,
+                'shu'       => $shu,
                 'username'  => $this->CI->session->userdata('username'),
                 'noang'     => $this->CI->session->userdata('noang'),
                 'status'    => $this->CI->session->userdata('status')
