@@ -15,7 +15,7 @@ class Simpanan_c extends CI_Controller {
     public function index()
     {
         // $data['title'] = 'Simpanan';
-        // $data['t_saldo_simpanan'] = $this->Simpanan_m->getAllSimpananIDPegawai;
+        // $data['t_saldo_simpanan'] = $this->Simpanan_m->getSimpananSukarela;
 
         if ($this->CI->session->userdata('status') == 'pegawai') {
             $data       = [
