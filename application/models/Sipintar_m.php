@@ -4,6 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Sipintar_m extends CI_Model
 {
+    // untuk anggota
     public function kupon($where)
     {
         $this->db->select('*');
@@ -14,6 +15,7 @@ class Sipintar_m extends CI_Model
         return $query;
     }
 
+    // untuk anggota
     public function shu($where)
     {
         $this->db->select('*');
@@ -24,20 +26,22 @@ class Sipintar_m extends CI_Model
         return $query;
     }
 
-    // public function kupon2($where)
-    // {
-    //     $this->db->select('SaldoAkhir');
-    //     $this->db->from('tabungan');
-    //     $this->db->where('no_ang', $where);
-    //     $this->db->where('GolonganTabungan', '09');
-    // }
+    // untuk pegawai (tetapi tidak dipakai)
+    public function kupon2($where)
+    {
+       $this->db->select('SaldoAkhir');
+       $this->db->from('tabungan');
+        $this->db->where('no_peg', $where);
+        $this->db->where('GolonganTabungan', '09');
+    }
 
-    // public function shu2($where)
-    // {
-    //     $this->db->select('SaldoAkhir');
-    //     $this->db->from('tabungan');
-    //     $this->db->where('no_ang', $where);
-    //     $this->db->where('GolonganTabungan', '10');
-    // }
+    // untuk pegawai (tetapi tidak dipakai)
+    public function shu2($where)
+    {
+        $this->db->select('SaldoAkhir');
+        $this->db->from('tabungan');
+        $this->db->where('no_peg', $where);
+        $this->db->where('GolonganTabungan', '10');
+    }
 }
 ?>

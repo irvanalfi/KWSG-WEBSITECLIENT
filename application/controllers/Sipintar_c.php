@@ -18,7 +18,15 @@ class Sipintar_c extends CI_Controller
     public function index()
     {
         if ($this->CI->session->userdata('status') == 'pegawai') {
+            // tidak digunakan
+            $wherePeg      = $this->CI->session->userdata('nopeg');
+            $queryKupon2   = $this->Sipintar_m->kupon2($wherePeg);
+            $queryShu2     = $this->Sipintar_m->shu2($wherePeg);
+            $kupon2        = $queryKupon2->row();
+            $shu2          = $queryShu2->row();
             $data       = [
+                'kupon2'     => $kupon2,
+                'shu2'       => $shu2,
                 'username'  => $this->CI->session->userdata('username'),
                 'nopeg'     => $this->CI->session->userdata('nopeg'),
                 'status'    => $this->CI->session->userdata('status')
