@@ -43,5 +43,15 @@ class Sipintar_m extends CI_Model
         $this->db->where('no_peg', $where);
         $this->db->where('GolonganTabungan', '10');
     }
+
+    public function listKupon($where)
+    {
+        $this->db->select('*');
+        $this->db->from('mutasitabungan');
+        $this->db->where('No_ang', $where);
+        $this->db->where('GolonganTabungan', '09');
+        $query = $this->db->get();
+        return $query;
+    }
 }
 ?>

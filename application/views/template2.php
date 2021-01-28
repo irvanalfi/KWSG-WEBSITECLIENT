@@ -66,11 +66,7 @@
             </div>
             <div class="col pl-3 text-left align-self-center">
                 <h6 class="mb-1">
-                    <?php if ($who == 'pegawai') {
-                        echo "$row->nama";
-                    } else {
-                        echo "$row->nm_ang";
-                    } ?>
+                <?= $username ?>
                 </h6>
             </div>
         </div>

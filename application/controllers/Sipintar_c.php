@@ -52,7 +52,29 @@ class Sipintar_c extends CI_Controller
 
     public function listSipintarKupon()
     {
-        $this->template->load('template2', 'sipintar/listSipintarKupon');
+        if ($this->CI->session->userdata('status') == 'pegawai') {
+            $data       = [
+                'username'  => $this->CI->session->userdata('username'),
+                'nopeg'     => $this->CI->session->userdata('nopeg'),
+                'status'    => $this->CI->session->userdata('status')
+            ];
+            $this->template->load('template', 'sipintar/sipintar', $data);
+        } else {
+            $where      = $this->CI->session->userdata('noang');
+            $queryKupon = $this->Sipintar_m->kupon($where);
+            $listKupon  = $this->Sipintar_m->listKupon($where);
+            $kupon      = $queryKupon->row();
+            $list       = $listKupon->row();
+            $data       = [
+                'kupon'     => $kupon,
+                'list'      => $list,
+                'username'  => $this->CI->session->userdata('username'),
+                'noang'     => $this->CI->session->userdata('noang'),
+                'status'    => $this->CI->session->userdata('status')
+            ];
+            
+            $this->template->load('template2', 'sipintar/listSipintarKupon', $data);
+        }
     }
 
     public function listSipintarShu()

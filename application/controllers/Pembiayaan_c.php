@@ -25,7 +25,11 @@ class Pembiayaan_c extends CI_Controller
             ];
             $this->template->load('template', 'pembiayaan', $data);
         } else {
+            $where         = $this->CI->session->userdata('noang');
+            $queryPinjaman = $this->Pembiayaan_m->pinjaman($where);
+            $pinjaman      = $queryPinjaman->row();
             $data       = [
+                'pinjaman'  => $pinjaman,
                 'username'  => $this->CI->session->userdata('username'),
                 'noang'     => $this->CI->session->userdata('noang'),
                 'status'    => $this->CI->session->userdata('status')

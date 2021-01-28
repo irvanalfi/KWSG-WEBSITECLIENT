@@ -29,9 +29,9 @@
         </div>
         <div class="card-body">
             <p class=" text-center mb-1">Sisa Plafon Pinjaman</p>
-            <h5 class=" text-center mb-3">Rp. 385.000,00</h5>
+            <h5 class=" text-center mb-3"><?= indo_currency($pinjaman->sisa_plafon) ?></h5>
             <h6 class=" text-center mb-1">Jumlah Pinjaman</h6>
-            <h3 class=" text-center mb-0">Rp. 65.000.000,00</h3>
+            <h3 class=" text-center mb-0"><?= indo_currency($pinjaman->jml_pinjam) ?></h3>
         </div>
         <div class="card-footer">
             <div class="container">
@@ -40,11 +40,11 @@
             <div class="row align-items-center">
                 <div class="col ml-2">
                     <p class="mb-0">Angsuran Per Bulan</p>
-                    <p class="text-secondary">Rp. 1.892.050,00</p>
+                    <p class="text-secondary"><?= indo_currency($pinjaman->angsuran) ?></p>
                 </div>
                 <div class="col align-self-center">
                     <p class="mb-1 text-secondary">Sisa Masa Angsuran</p>
-                    <p class="text-default">33 Bulan</p>
+                    <p class="text-default"><?= $pinjaman->tempo_bln ?> Bulan</p>
                 </div>
             </div>
         </div>

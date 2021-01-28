@@ -1,5 +1,5 @@
 <div class="container mt-3 mb-3 text-center">
-    <h2 class="text-white">Rp. 750.000,00</h2>
+    <h2 class="text-white"><?= indo_currency($kupon->SaldoAkhir) ?></h2>
     <p class="text-white mb-2">List Transaksi Sipintar Kupon</p>
     <span class="arrow material-icons" style="color: white !important;">expand_more</span>
 </div>
