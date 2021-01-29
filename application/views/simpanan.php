@@ -28,7 +28,7 @@
                                 <p>Simpanan Sukarela</p>
                             </div>
                             <div class="col-4 align-self-center border-left">
-                                <h6 class="mb-1">$ 1548.00</h6>
+                                <h6 class="mb-1"><?= indo_currency($simpananSukarela->saldo_akhir) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                                 <p>Simpanan Pokok</p>
                             </div>
                             <div class="col-4 align-self-center border-left">
-                                <h6 class="mb-1">$ 1548.00</h6>
+                                <h6 class="mb-1"><?= indo_currency($simpananPokok->saldo_akhir) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                 <p>Simpanan Wajib</p>
                             </div>
                             <div class="col-4 align-self-center border-left">
-                                <h6 class="mb-1">$ 1548.00</h6>
+                                <h6 class="mb-1"><?= indo_currency($simpananWajib->saldo_akhir) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                                 <p>Simpanan Khusus Permanen</p>
                             </div>
                             <div class="col-4 align-self-center border-left">
-                                <h6 class="mb-1">$ 1548.00</h6>
+                                <h6 class="mb-1"><?= indo_currency($simpananKPermanen->saldo_akhir) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                                 <p>Simpanan Khusus Berjangka</p>
                             </div>
                             <div class="col-4 align-self-center border-left">
-                                <h6 class="mb-1">$ 1548.00</h6>
+                                <h6 class="mb-1"><?= indo_currency($simpananKBerjangka->saldo_akhir) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                                 <p>Simpanan Deposito</p>
                             </div>
                             <div class="col-4 align-self-center border-left">
-                                <h6 class="mb-1">$ 1548.00</h6>
+                                <h6 class="mb-1"><?= indo_currency($simpananDeposito->saldo_akhir) ?></h6>
                             </div>
                         </div>
                     </div>

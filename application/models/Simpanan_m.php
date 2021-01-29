@@ -10,7 +10,7 @@ class Simpanan_m extends CI_Model {
 
     public function getSimpananSukarela($no_ang)
     {
-        $this->db->select('saldo_akhir');
+        $this->db->select('*');
         $this->db->from('t_saldo_simpanan');
         $this->db->where('no_ang', $no_ang);
         $this->db->where('nm_simpanan', 'SIMPANAN SUKARELA TUNAI');
@@ -21,7 +21,7 @@ class Simpanan_m extends CI_Model {
 
     public function getSimpananWajib($no_ang)
     {
-        $this->db->select('saldo_akhir');
+        $this->db->select('*');
         $this->db->from('t_saldo_simpanan');
         $this->db->where('no_ang', $no_ang);
         $this->db->where('nm_simpanan', 'SIMPANAN WAJIB');
@@ -32,7 +32,7 @@ class Simpanan_m extends CI_Model {
 
     public function getSimpananKhususBerjangka($no_ang)
     {
-        $this->db->select('saldo_akhir');
+        $this->db->select('*');
         $this->db->from('t_saldo_simpanan');
         $this->db->where('no_ang', $no_ang);
         $this->db->where('nm_simpanan', 'SIMPANAN KHUSUS PERMANENT');
@@ -43,7 +43,7 @@ class Simpanan_m extends CI_Model {
 
     public function getSimpananKhususPermanen($no_ang)
     {
-        $this->db->select('saldo_akhir');
+        $this->db->select('*');
         $this->db->from('t_saldo_simpanan');
         $this->db->where('no_ang', $no_ang);
         $this->db->where('nm_simpanan', 'SIMPANAN KHUSUS BERJANGKA');
@@ -54,7 +54,7 @@ class Simpanan_m extends CI_Model {
 
     public function getSimpananPokok($no_ang)
     {
-        $this->db->select('saldo_akhir');
+        $this->db->select('*');
         $this->db->from('t_saldo_simpanan');
         $this->db->where('no_ang', $no_ang);
         $this->db->where('nm_simpanan', 'SIMPANAN POKOK');
@@ -65,7 +65,7 @@ class Simpanan_m extends CI_Model {
 
     public function getSimpananDeposito($no_ang)
     {
-        $this->db->select('saldo_akhir');
+        $this->db->select('*');
         $this->db->from('t_saldo_simpanan');
         $this->db->where('no_ang', $no_ang);
         $this->db->where('nm_simpanan', 'DEPOSITO');
