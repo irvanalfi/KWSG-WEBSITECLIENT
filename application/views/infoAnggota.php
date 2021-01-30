@@ -12,7 +12,7 @@
             </div>
             <div class="card-body px-0 pt-0">
                 <div class="list-group list-group-flush border-top border-color">
-                    <a href="language.html" class="list-group-item list-group-item-action border-color">
+                    <a href="#" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="security_settings.html" class="list-group-item list-group-item-action border-color">
+                    <a href="#" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="notification_settings.html" class="list-group-item list-group-item-action border-color">
+                    <a href="#" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="my_cards.html" class="list-group-item list-group-item-action border-color">
+                    <a href="#" class="list-group-item list-group-item-action border-color">
                         <div class="row">
                             <div class="col-auto">
                                 <div class="avatar avatar-50 bg-default-light text-default rounded">
