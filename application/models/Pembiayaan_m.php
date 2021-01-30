@@ -8,6 +8,7 @@ class Pembiayaan_m extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('t_pinjaman_ang');
+        $this->db->where('no_ang', $where);
         $query = $this->db->get();
         return $query;
     }
