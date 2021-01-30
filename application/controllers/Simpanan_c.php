@@ -12,25 +12,6 @@ class Simpanan_c extends CI_Controller {
         $this->load->model('Simpanan_m');
     }
 
-    // public function index()
-    // {
-    //     if ($this->CI->session->userdata('status') == 'pegawai') {
-    //         $data       = [
-    //             'username'  => $this->CI->session->userdata('username'),
-    //             'nopeg'     => $this->CI->session->userdata('nopeg'),
-    //             'status'    => $this->CI->session->userdata('status')
-    //         ];
-    //         $this->template->load('template', 'simpanan', $data);
-    //     } else {
-    //         $data       = [
-    //             'username'  => $this->CI->session->userdata('username'),
-    //             'noang'     => $this->CI->session->userdata('noang'),
-    //             'status'    => $this->CI->session->userdata('status'),
-    //         ];
-    //         $this->template->load('template', 'simpanan', $data);
-    //     }
-    // }
-
     public function index()
     {
         if ($this->CI->session->userdata('status') == 'pegawai') {
