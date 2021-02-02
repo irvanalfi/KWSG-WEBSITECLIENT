@@ -181,7 +181,7 @@
                     <button type="button" class="btn btn-link btn-40 colorsettings">
                         <span class="material-icons">color_lens</span>
                     </button>
-                    <a href="profile.html" class="avatar avatar-30 shadow-sm rounded-circle ml-2">
+                    <a href="<?= site_url('Profile_c') ?>" class="avatar avatar-30 shadow-sm rounded-circle ml-2">
                         <figure class="m-0 background">
                             <img src="<?= base_url() ?>assets/img/user1.png" alt="">
                         </figure>

@@ -17,7 +17,7 @@
 </div>
 
 <div class="container mb-4 text-center text-white">
-    <h6 class="mb-1">Wahyu Maulana</h6>
+    <h6 class="mb-1"><?= $username ?></h6>
     <p>Gresik, Indonesia</p>
     <p class="mb-1">wahyumaulana01@gmail.com</p>
     <p>+62 8177 8821 1152</p>
