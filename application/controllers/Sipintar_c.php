@@ -45,7 +45,7 @@ class Sipintar_c extends CI_Controller
                 'noang'     => $this->CI->session->userdata('noang'),
                 'status'    => $this->CI->session->userdata('status')
             ];
-            
+
             $this->template->load('template', 'sipintar/sipintar', $data);
         }
     }
@@ -53,7 +53,11 @@ class Sipintar_c extends CI_Controller
     public function listSipintarKupon()
     {
         if ($this->CI->session->userdata('status') == 'pegawai') {
+            $wherePeg      = $this->CI->session->userdata('nopeg');
+            $queryKupon2   = $this->Sipintar_m->kupon2($wherePeg);
+            $kupon2        = $queryKupon2->row();
             $data       = [
+                'kupon2'     => $kupon2,
                 'username'  => $this->CI->session->userdata('username'),
                 'nopeg'     => $this->CI->session->userdata('nopeg'),
                 'status'    => $this->CI->session->userdata('status')
@@ -62,24 +66,44 @@ class Sipintar_c extends CI_Controller
         } else {
             $where      = $this->CI->session->userdata('noang');
             $queryKupon = $this->Sipintar_m->kupon($where);
-            $listKupon  = $this->Sipintar_m->listKupon($where);
             $kupon      = $queryKupon->row();
-            $list       = $listKupon->row();
             $data       = [
                 'kupon'     => $kupon,
-                'list'      => $list,
                 'username'  => $this->CI->session->userdata('username'),
                 'noang'     => $this->CI->session->userdata('noang'),
                 'status'    => $this->CI->session->userdata('status')
             ];
-            
+
             $this->template->load('template2', 'sipintar/listSipintarKupon', $data);
         }
     }
 
     public function listSipintarShu()
     {
-        $this->template->load('template2', 'sipintar/listSipintarShu');
+        if ($this->CI->session->userdata('status') == 'pegawai') {
+            // tidak digunakan
+            $wherePeg      = $this->CI->session->userdata('nopeg');
+            $queryShu2     = $this->Sipintar_m->shu2($wherePeg);
+            $shu2          = $queryShu2->row();
+            $data       = [
+                'shu2'       => $shu2,
+                'username'  => $this->CI->session->userdata('username'),
+                'nopeg'     => $this->CI->session->userdata('nopeg'),
+                'status'    => $this->CI->session->userdata('status')
+            ];
+            $this->template->load('template2', 'sipintar/listSipintarShu', $data);
+        } else {
+            $where      = $this->CI->session->userdata('noang');
+            $queryShu   = $this->Sipintar_m->shu($where);
+            $shu        = $queryShu->row();
+            $data       = [
+                'shu'       => $shu,
+                'username'  => $this->CI->session->userdata('username'),
+                'noang'     => $this->CI->session->userdata('noang'),
+                'status'    => $this->CI->session->userdata('status')
+            ];
+            $this->template->load('template2', 'sipintar/listSipintarShu', $data);
+        }
     }
 
     public function detailSipintarKupon()
